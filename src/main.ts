@@ -39,7 +39,6 @@ import 'zone.js';
       </select></td>
       </div>
       <div>
-     
         <td>{{ime3}}</td>
         <td>25</td>
         <td>25</td>
