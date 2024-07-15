@@ -6,51 +6,63 @@ import 'zone.js';
   selector: 'app-root',
   standalone: true,
   template: `
-   
-   
-    <select name="drop down">
-      <option>x</option>
-      <option>y</option>
-      <option>z</option>
-    </select>
-    <table name ="tabela" border="1">
-      <tr>
-        <th>Tim</th>
-        <th>Win</th>
-        <th>Los</th>
-      </tr>
-      <tr>
-        <td>{{ime1}}</td>
-        <td>72</td>
-        <td>9</td>
-      </tr>
-      <tr>
-        <td>{{ime2}}</td>
-        <td>52</td>
-        <td>28</td>
-      </tr>
-      <tr>
+  
+    <table border="1">
+      <div id="R.0">
+        <th >Team</th>
+        <th >W</th> 
+        <th >L</th>
+        <th> <select>
+        <option><button>{{ime4}}</button></option>
+        <option><button>{{ime5}}</button></option>
+        <option><button>{{ime6}}</button></option>
+      </select></th>
+      </div>
+      <div id="R1">
+        <td >{{ime1}}</td>
+        <td >72</td>
+        <td >9</td>
+       <td> <select>
+        <option><button>{{ime4}}</button></option>
+        <option><button>{{ime5}}</button></option>
+        <option><button>{{ime6}}</button></option>
+      </select></td>
+      </div>
+      <div id="R2">
+        <td >{{ime2}}</td>
+        <td >52</td>
+        <td >28</td>
+        <td> <select>
+        <option><button>{{ime4}}</button></option>
+        <option><button>{{ime5}}</button></option>
+        <option><button>{{ime6}}</button></option>
+      </select></td>
+      </div>
+      <div>
+     
         <td>{{ime3}}</td>
         <td>25</td>
         <td>25</td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <button name="button"  href="youtube.com">{{ime4}}</button>
-      </tr>
+        <td> <select>
+        <option><button>{{ime4}}</button></option>
+        <option><button>{{ime5}}</button></option>
+        <option><button>{{ime6}}</button></option>
+      </select></td>
+
+      </div>
+
     </table>
 
-    
-    
   `,
 })
 export class App {
-  name = 'Angular';
+
   ime1 = 'GSW';
   ime2 = 'LAL';
   ime3 = 'LAC';
-  ime4 = 'youtube';
+  ime4 = 'View';
+  ime5 = 'Edit';
+  ime6 = 'Delete';
 }
 
 bootstrapApplication(App);
