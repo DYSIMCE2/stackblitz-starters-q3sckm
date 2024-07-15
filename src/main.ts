@@ -39,7 +39,7 @@ import 'zone.js';
         <button>{{ime6}}</button>
       </div>
       <div>
-        <td >{{ime3}}</td>
+        <td>{{ime3}}</td>
         <td>25</td>
         <td>25</td>
         <button>{{ime4}}</button>
@@ -47,13 +47,7 @@ import 'zone.js';
         <button>{{ime6}}</button>
       </div>
     </table>
-    <table>
-      <tr>
-        <button>{{ime4}}</button>
-        <button>{{ime5}}</button>
-        <button>{{ime6}}</button>
-      </tr>
-    </table>
+   
 
     
     
