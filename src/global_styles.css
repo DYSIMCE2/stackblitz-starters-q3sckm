@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+table {
+  
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+}
+button {
+  
+  margin: 10px;
+  width: 175px;
+}
+select {
+  
+}
