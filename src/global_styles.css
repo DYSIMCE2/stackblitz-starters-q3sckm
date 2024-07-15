@@ -1,6 +1,6 @@
 /* Add application styles & imports to this file! */
 table {
-
+align-content: center;
   margin: 10px;
   width: 250px;
   height: 100px;
@@ -11,7 +11,7 @@ button {
   width: 50px;
 }
 select {
-  margin-left: 90px;
+  margin: relative;
 }
 div{
   position: relative;
