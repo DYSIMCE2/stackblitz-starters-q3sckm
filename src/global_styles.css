@@ -2,18 +2,25 @@
 table {
 
   margin: 10px;
-  width: 200px;
+  width: 250px;
   height: 100px;
 }
 button {
   border-color: black;
   margin: 10px;
-  width: 175px;
+  width: 50px;
 }
 select {
   margin-left: 90px;
 }
 div{
+  position: relative;
   margin-bottom:10px;
   margin-left:10px;
+}
+td{
+  margin: 10px;
+}
+th{
+  margin: 10px;
 }

@@ -15,24 +15,36 @@ import 'zone.js';
     </select>
     <table border="1">
       <div id="R.0">
-        <th id="0.0">Tim</th>
-        <th id="0.1">Win</th> 
-        <th id="0.2">Los</th>
+        <th >Tim</th>
+        <th >Win</th> 
+        <th >Los</th>
+        <button>{{ime4}}</button>
+        <button>{{ime5}}</button>
+        <button>{{ime6}}</button>
       </div>
       <div id="R1">
-        <td id="1.0">{{ime1}}</td>
-        <td id="1.1">72</td>
-        <td id="1.2">9</td>
+        <td >{{ime1}}</td>
+        <td >72</td>
+        <td >9</td>
+        <button>{{ime4}}</button>
+        <button>{{ime5}}</button>
+        <button>{{ime6}}</button>
       </div>
       <div id="R2">
-        <td id="2.0">{{ime2}}</td>
-        <td id="2.1">52</td>
-        <td id="2.2">28</td>
+        <td >{{ime2}}</td>
+        <td >52</td>
+        <td >28</td>
+        <button>{{ime4}}</button>
+        <button>{{ime5}}</button>
+        <button>{{ime6}}</button>
       </div>
       <div>
         <td >{{ime3}}</td>
         <td>25</td>
         <td>25</td>
+        <button>{{ime4}}</button>
+        <button>{{ime5}}</button>
+        <button>{{ime6}}</button>
       </div>
     </table>
     <table>
