@@ -10,17 +10,15 @@ import 'zone.js';
   
     <table border="1">
       <div id="R.0">
-        <th>Team</th>
-        <th>W</th> 
-        <th>L</th>
+        <th >Team</th>
+        <th >W</th> 
+        <th >L</th>
         <th> <select>
         <option><button>{{ime4}}</button></option>
         <option><button>{{ime5}}</button></option>
         <option><button>{{ime6}}</button></option>
       </select></th>
       </div>
-      </table>
-      <table border="1"> 
       <div id="R1">
         <td >{{ime1}}</td>
         <td >72</td>
@@ -31,8 +29,6 @@ import 'zone.js';
         <option><button>{{ime6}}</button></option>
       </select></td>
       </div>
-      </table>
-      <table border="1">
       <div id="R2">
         <td >{{ime2}}</td>
         <td >52</td>
@@ -43,8 +39,6 @@ import 'zone.js';
         <option><button>{{ime6}}</button></option>
       </select></td>
       </div>
-      </table>
-      <table border="1">
       <div>
         <td>{{ime3}}</td>
         <td>25</td>
