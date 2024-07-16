@@ -5,8 +5,7 @@ import 'zone.js';
 @Component({
   selector: 'app-root',
   standalone: true,
-  template:
- `
+  template: `
   
     <table border="1">
       <div id="R.0">
@@ -63,7 +62,6 @@ export class App {
   ime4 = 'View';
   ime5 = 'Edit';
   ime6 = 'Delete';
-
 }
 
 bootstrapApplication(App);
