@@ -1,0 +1,14 @@
+
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+
+      <app-dialog></app-dialog>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+       Add Data
+      </button>
+    </div>
+  
+  </mat-drawer-container>

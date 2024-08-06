@@ -1,13 +1,17 @@
 table {
-  
-    margin: 10px;
-    width: 150px;
-    height: 10px;
+    width: 100%;
+}
+
+ 
+  mat-toolbar{
+
+    position: relative;
+    z-index: 5;
   }
-  button {
-    
-    margin: 10px;
-    width: 175px;
+  .content{
+    padding: 20px;
   }
-  
-  
+  .mat-elevation-z8{
+
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,16 @@
+mat-drawer-container{
+  height: 100%;
+  width: 100%;
+  margin-left:0px;
+  padding: 16px;
+ display: flex;
+ justify-content: flex-end;
+    border-radius: 1%;
+  }
+ 
+.sidenav-content {
+  margin-left: 0x;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}

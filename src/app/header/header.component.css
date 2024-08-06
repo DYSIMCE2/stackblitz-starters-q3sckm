@@ -1,13 +1,14 @@
-table {
-  
-    margin: 10px;
-    width: 150px;
-    height: 10px;
+.spacer {
+    flex: 1 1 auto;
   }
-  button {
-    
-    margin: 10px;
-    width: 175px;
-  }
-  
-  
+button{
+
+color: aliceblue;
+
+}
+.header-menu{
+  color: aliceblue;
+  background-color: rgba(4, 1, 97, 0.733);
+  background-origin: padding-box;
+  border-radius: 3%;
+}
