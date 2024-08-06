@@ -1,0 +1,26 @@
+
+  <div class="sidenav-content">
+    <h2 mat-dialog-title  >Add Data
+  </h2>
+  <mat-dialog-content >
+    <p>
+        <td><mat-form-field class="full-width">
+          <mat-label>Team name</mat-label>
+          <input matInput>
+        </mat-form-field></td>
+      <mat-form-field class="full-width">
+        <mat-label>Wins</mat-label>
+        <textarea matInput ></textarea>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Loss</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+    </p>
+    </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="Add()">Add and Close</button>
+    <button mat-button  (click)="Add()">Add</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</div>

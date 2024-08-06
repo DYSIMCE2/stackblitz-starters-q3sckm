@@ -2,62 +2,52 @@
 <table>
     <th>
     <app-header></app-header>
+    
     </th>
     </table>
 
 
     <div class="mat-elevation-z8">
 
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-        <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef> Num </th>
-          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-        </ng-container>
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef> Team </th>
-          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-        </ng-container>
-        <ng-container matColumnDef="Winn">
-          <th mat-header-cell *matHeaderCellDef> Wins </th>
-          <td mat-cell *matCellDef="let element"> {{element.wins}} </td>
-        </ng-container>
-        <ng-container matColumnDef="Loss">
-          <th mat-header-cell *matHeaderCellDef> Loss </th>
-          <td mat-cell *matCellDef="let element"> {{element.loss}} </td>
-        </ng-container>
-        <ng-container matColumnDef="delete">
-          <th mat-header-cell *matHeaderCellDef></th>
-          <td mat-cell *matCellDef="let element"> <button mat-raised-button (click)="remove(element)">{{element.delete}}</button> </td>
-        </ng-container>
-        <ng-container matColumnDef="edit">
-          <th mat-header-cell *matHeaderCellDef></th>
-          <td mat-cell *matCellDef="let element"> <button mat-raised-button (click)="edit(element)">{{element.edit}}</button> </td>
-        </ng-container>
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
-
-    <mat-paginator 
-    length="10"
-      [pageSizeOptions]="[10]"
-      showFirstLastButtons
-      aria-label="Select page of periodic elements">
-</mat-paginator>
-</div>  
-   <mat-toolbar class ="mat-elevation-z3" >
-    <button mat-button (click)="undo()">Undo</button>
-    <app-edit-page></app-edit-page>
-   </mat-toolbar>
-<mat-sidenav-container class="container">
-  <mat-sidenav opened mode="side" >
-<app-dialog>
-
-</app-dialog>
-  </mat-sidenav>
-  <mat-sidenav-content class="content">
-    <router-outlet>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> Num </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+          </ng-container>
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Team </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+          <ng-container matColumnDef="Winn">
+            <th mat-header-cell *matHeaderCellDef> Wins </th>
+            <td mat-cell *matCellDef="let element"> {{element.wins}} </td>
+          </ng-container>
+          <ng-container matColumnDef="Loss">
+            <th mat-header-cell *matHeaderCellDef> Loss </th>
+            <td mat-cell *matCellDef="let element"> {{element.loss}} </td>
+          </ng-container>
+          <ng-container matColumnDef="delete">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let element"> <button mat-raised-button (click)="remove(element)">{{element.delete}}</button> </td>
+          </ng-container>
+          <ng-container matColumnDef="edit">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let element"> <button mat-raised-button (click)="edit(element)">{{element.edit}}</button> </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
   
-    </router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-   
+      <mat-paginator 
+     
+      length="10"
+        [pageSizeOptions]="[10]"
+        showFirstLastButtons
+        aria-label="Select page of periodic elements">
+        
+  </mat-paginator>
+  <button mat-button (click)="undo()" [disabled]="isUndoDisabled()">Undo</button>
+
+  <button mat-button (click)=" Add()">Add Data</button>
+
+</div>

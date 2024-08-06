@@ -1,10 +1,7 @@
 table {
     width: 100%;
-  }
-  mat-sidenav-container{
-    height: calc(100vh - 64px);
-    width: 350px;
-  }
+}
+
  
   mat-toolbar{
 
@@ -13,4 +10,8 @@ table {
   }
   .content{
     padding: 20px;
+  }
+  .mat-elevation-z8{
+
+    margin-bottom: 10px;
   }
